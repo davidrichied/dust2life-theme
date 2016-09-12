@@ -1,0 +1,123 @@
+
+/*Blog Page--------------------------------------------*/
+
+
+/*Only apply to front page normal cards (also in the ajax tabs) and portfolio page*/
+.normal-cards {
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+
+    h2 {
+        font-weight: 100;
+        text-align: center;
+    }
+    .card-image:hover > .rimage {
+        transform: scale(1.2);
+    }
+
+    .card-image {
+        height: 245px;
+        /*giving the card image a height allows the inner_overlay table to center vertically*/
+        position: relative;
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+
+
+    .card-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px 0 10px;
+        vertical-align: top;
+    }
+
+
+    .card-image .rimage {
+        height: 245px;
+    }
+
+    .rimage.background-image {
+        background-position: center;
+        background-size: cover;
+
+        /*This rule turns the zoom on hover into a nice transition*/
+    }
+
+    .rimage.background-image {
+        transition: all 1.5s ease;
+    }
+
+    .card-image {
+        .cheetah {
+            background-image: url("images/websites-d2l.png");
+        }
+        .elephant {
+            background-image: url("images/coding-d2l.png");
+        }
+        .rhino {
+            background-image: url("images/blog-d2l.png");
+        }
+    }
+
+    .card-details {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+        padding: 30px;
+        box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+    }
+
+    .card-details {
+        position: relative;
+        padding: 20px;
+        background-color: white;
+    }
+
+
+
+
+
+    .card-item .tail {
+        margin-top: auto;
+    }
+
+    .card-item .tail {
+        text-align: right;
+        overflow: auto;
+    }
+
+    .work-label-venture.card-item .tail a {
+        border-color: #14C04D;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .card-item .tail a {
+        display: inline-block;
+        float: left;
+        text-align: left;
+        border-bottom: 2px solid;
+    }
+
+    @media screen and (min-width: 768px) {
+        .card-item {
+            width: 50%;
+            padding: 0 15px 30px 15px;
+        } 
+    }  
+
+
+    @media screen and (min-width: 1240px) {
+        .card-item {
+            width: 33.333%;
+        }
+    }
+}
+
+
+
+
+

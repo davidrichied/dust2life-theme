@@ -1,0 +1,130 @@
+.overlay-cards {
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+
+	.card-image {
+		border-radius: 5px 0 0 0;
+	}
+  .card-details {
+      box-shadow: 0 0 0 0;
+      border-radius: 0 0 5px 0;
+      background-color: rgba(255,255,255,.6);
+  }
+    .card-image:hover > .rimage {
+        transform: scale(1.2);
+    }
+
+    .card-image {
+        height: 245px;
+        /*giving the card image a height allows the inner_overlay table to center vertically*/
+        position: relative;
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+
+
+    .card-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px 0 10px;
+        vertical-align: top;
+    }
+
+
+    .card-image .rimage {
+        height: 245px;
+    }
+
+    .rimage.background-image {
+        background-position: center;
+        background-size: cover;
+
+        /*This rule turns the zoom on hover into a nice transition*/
+    }
+
+    .rimage.background-image,
+    .inside-title,
+    .inner_overlay {
+        transition: all 1.5s ease;
+    }
+
+    .card-details {
+        display: -ms-flexbox;
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+        padding: 30px;
+        box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+    }
+
+    .card-details {
+        position: relative;
+        padding: 20px;
+        background-color: white;
+    }
+
+    .card-item .tail {
+        margin-top: auto;
+    }
+
+    .card-item .tail {
+        text-align: right;
+        overflow: auto;
+    }
+
+    .work-label-venture.card-item .tail a {
+        border-color: #14C04D;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .card-item .tail a {
+        display: inline-block;
+        float: left;
+        text-align: left;
+        border-bottom: 2px solid;
+    }
+
+    @media screen and (min-width: 768px) {
+        .card-item {
+            width: 50%;
+            padding: 0 15px 30px 15px;
+        }
+    }  
+
+
+    .skills-container .card-item .card-image .inside-title {
+        cursor: pointer;
+    }
+    .inside-title {
+        padding-bottom: 0;
+        text-align: center;
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        color: white;
+    }
+
+    .inner_overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: table;
+        background-color: rgba(0,0,0,.3);
+        
+        z-index: 1000;
+    }
+
+    .inner_overlay:hover {
+        /*background-color: rgb(113,200,141);*/
+        /*background-color: hsla(139,44%,61%,.4);*/
+        
+    }
+
+
+}
+
+

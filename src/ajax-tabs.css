@@ -1,0 +1,93 @@
+.ajax-tabs .large-title {
+    text-align: center;
+}
+.wpt_widget_content {
+    border: none !important;
+}
+.wpt_widget_content .inside {
+    background-color: rgba(255,255,255,0) !important;
+}
+@media screen and (min-width: 1200px) {
+    .ajax-tabs {
+        width: 69%;
+        vertical-align: top;
+        display: inline-block;
+        padding-right: 20px;
+    }   
+    .ajax-tabs .wpt_widget_content {
+        .card-list .card-item {
+            width: 50%;
+        }
+    }    
+}
+
+ul.wpt-tabs.has-3-tabs {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    float: right;
+}
+
+.wpt_widget_content {
+    /*margin-left: 20px;
+    margin-right: 20px;*/
+    background-color: gray;
+    min-height: 515px;
+}
+.wpt_widget_content .tab_title.selected a {
+     background: transparent !important; 
+     border-bottom: none !important; 
+}
+
+.wpt_widget_content .tab_title a {
+     background: transparent !important; 
+     border-left: none !important; 
+     border-bottom: none !important; 
+}
+
+
+    .wpt-tabs {
+        position: relative;
+        z-index: 1;
+        white-space: nowrap;
+    }
+
+    .wpt-tabs li {
+        position: relative;
+        display: inline-block;
+        padding: 1.5em 1.5em 1em;
+        color: inherit;
+        text-decoration: none;
+        margin: 0 -7px;
+    } 
+
+    .wpt-tabs li::before,
+
+
+    .wpt-tabs li::before {
+        content: ''; /* To generate the box */
+        position: absolute;
+        top: 0; right: 0; bottom: .5em; left: 0;
+        z-index: -1;
+        border-bottom: none;
+        border-radius: 10px 10px 0 0;
+        background: #ddd;
+        box-shadow: 0 2px hsla(0,0%,100%,.5) inset;
+        transform: perspective(5px) rotateX(2deg);
+        transform-origin: bottom;
+    }
+
+    ul.wpt-tabs.has-3-tabs {
+    position: relative;
+    bottom: 36px;
+}
+
+
+.wpt_widget_content .overlay-cards {
+    @media screen and (min-width: 1240px) {
+        .card-item {
+            width: 33.33333333%;
+        }
+    }
+    
+}

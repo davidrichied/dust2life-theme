@@ -1,0 +1,22 @@
+{
+  "name": "webpagearchitecture",
+  "version": "1.0.0",
+  "description": "Services Web Site \"Web Page Architecture\"",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Richied",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.4",
+    "cssnext": "^1.8.4",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-postcss": "^6.1.0",
+    "precss": "^1.4.0"
+  }
+}

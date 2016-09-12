@@ -1,0 +1,43 @@
+
+.wpa-slogan-banner {
+    height: 200px;
+    width: 100%;
+    display: table;
+    background: transparent;
+
+}
+
+  .wpa-slogan-banner  .wrap {
+        margin: 0 auto;                
+        display: table-cell;
+        vertical-align: middle;
+    }
+   .wpa-slogan-banner .welcome-title {
+        margin: 0;
+        padding: 20px;
+        color: white;
+        font-size: 40px;
+    }
+   .wpa-slogan-banner h3 {
+        font-size: 30px;
+        font-weight:400;
+        color: white;
+        line-height: 1.2em;
+    }
+   .wpa-slogan-banner a {
+        color: white;
+        /*END WRAP*/
+    }
+
+        .bldg-bg .welcome-title {
+    /*font-variant: small-caps;*/
+    padding: 20px;
+    font-weight: 900;
+}
+
+@media screen and (min-width: 500px) {
+
+    .bldg-bg .welcome-title {
+        font-size: 68px;
+    }
+}
